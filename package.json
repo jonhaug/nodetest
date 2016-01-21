@@ -1,0 +1,25 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "Test various node stuff for portal upgrade.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonhaug/nodetest.git"
+  },
+  "author": "Jon Haugsand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonhaug/nodetest/issues"
+  },
+  "homepage": "https://github.com/jonhaug/nodetest#readme",
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "connect": "^3.4.0",
+    "cookie-session": "^1.2.0",
+    "restler": "^3.4.0"
+  }
+}
