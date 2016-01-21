@@ -43,9 +43,11 @@ says that the client started 7 minutes and 50 seconds ago, has sent 237 requests
 
 Lines like:
 
-`00:07:33 U/15: Starts`
+```
+ 00:07:33 U/15: Starts
  ...
- `00:07:48 U/15: Result: Done waiting 15 seconds`
+ 00:07:48 U/15: Result: Done waiting 15 seconds
+```
 
 says that 7:35 after the client started, a request (name 'U') with 15 seconds delay parameter was
 sent. At 07:48 the client got a response from the server.
