@@ -24,8 +24,10 @@ process.on('message', function(message) {
     log('shutting down...')
     server.close(function() {
       log('closed')
-      process.exit();
+      process.exit()
     })
+//    log('exiting right away')
+//    process.exit()
   }
 });
 

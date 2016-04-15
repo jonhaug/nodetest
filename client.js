@@ -32,7 +32,7 @@ setInterval(function() {
 setTimeout(function() {
   startProc.close()
   console.log('============ Stopping ==============')
-}, 1000*60*10)
+}, 1000*60*5)
 
 
 function doRequestAndWait(deltaTime, name) {

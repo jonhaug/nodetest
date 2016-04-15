@@ -32,7 +32,11 @@ if (cluster.isMaster) {
                30000)
   }
 } else {
-  log('I am worker ' + cluster.worker.id + ' name=' + cluster.worker.process.env.name);
+  var name=cluster.worker.process.env.name
+  log('I am worker ' + cluster.worker.id + ' name=' + name)
+  setInterval(()=>{
+    log(name + ' ' + process.uptime() + ' ' + process.memoryUsage())
+  }, 10000)
   var portal=require('./index');
 }
 
@@ -49,6 +53,11 @@ function getDeltaTime() {
 function log(x) {
   console.log(getDeltaTime() + ' ' + x)
 }
+function logMemoryUsages(process) {
+  var memUsage=process.memoryUsage()
+  
+}
+
 /**
 
 sendMany() { for DELAY in 2 5 40 1 3 50 2 1; do curl http://localhost:3091/delay/$DELAY & done; }
